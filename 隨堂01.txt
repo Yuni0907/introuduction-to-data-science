@@ -1,0 +1,64 @@
+
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> my_mat <- matrix(1:9, nrow = 3)
+> filter <- my_mat %% 2 == 2
+> my_mat[filter]
+integer(0)
+> 
+> my_mat <- matrix(1:9, nrow = 3)
+> my_mat[ 2 , 3 ]
+[1] 8
+> 
+> team_name <- c("Chicago Bulls", "Golden State Warriors")
+> wins <- c(72, 73)
+> losses <- c(10, 9)
+> is_champion <- c(TRUE, FALSE)
+> season <- c("1995-96", "2015-16")
+> great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season, stringsA
++ 
++ my_arr <- array(1:1000, dim = c(10, 10, 10))
+Error: unexpected symbol in:
+"
+my_arr"
+> my_arr[5,2,4]
+Error: object 'my_arr' not found
+> my_arr <- array(1:1000, dim = c(10, 10, 10))
+> my_arr[5,2,4]
+[1] 315
+> title <- "Worst NBA Teams"
+> teams <- c("Charlotte Bobcats", "Philadelphia 76ers")
+> wins <- c(7, 9)
+> losses <- c(59, 73)
+> worst_nba_teams <- list(7, 9, 59, 73)
+> worst_nba_teams[[7]]
+Error in worst_nba_teams[[7]] : subscript out of bounds
+> title <- "Worst NBA Teams"
+> teams <- c("Charlotte Bobcats", "Philadelphia 76ers")
+> wins <- c(7, 9)
+> losses <- c(59, 73)
+> worst_nba_teams <- list(7, 9, 59, 73)
+> worst_nba_teams[[9]]
+Error in worst_nba_teams[[9]] : subscript out of bounds
+> title <- "Worst NBA Teams"
+> teams <- c("Charlotte Bobcats", "Philadelphia 76ers")
+> wins <- c(7, 9)
+> losses <- c(59, 73)
+> worst_nba_teams <- list(7, 9, 59, 73)
+> worst_nba_teams[[2]]
+[1] 9
+> 
