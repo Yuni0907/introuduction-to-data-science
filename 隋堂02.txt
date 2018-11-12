@@ -1,0 +1,59 @@
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> weekdays <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+> favorite_day <- weekdays[Happy Friday]
+Error: unexpected symbol in "favorite_day <- weekdays[Happy Friday"
+> favorite_day
+Error: object 'favorite_day' not found
+> weekdays <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+> favorite_day <- weekdays[Friday]
+Error: object 'Friday' not found
+> favorite_day
+Error: object 'favorite_day' not found
+> weekdays <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
++ favorite_day <- weekdays[Friday]
+Error: unexpected symbol in:
+"weekdays <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+favorite_day"
+> weekdays <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+> favorite_day <- weekdays[5]
+> favorite_day
+[1] "Friday"
+> weekdays <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+> not_blue_monday <- weekdays != "Monday"
+> without_monday <- weekdays[1]
+> without_monday
+[1] "Monday"
+> weekdays <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+> not_blue_monday <- weekdays != "Monday"
+> without_monday <- weekdays[2 3 4 5]
+Error: unexpected numeric constant in "without_monday <- weekdays[2 3"
+> without_monday
+[1] "Monday"
+> weekdays <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+> not_blue_monday <- weekdays != "Monday"
+> without_monday <- weekdays[2:5]
+> without_monday
+[1] "Tuesday"   "Wednesday" "Thursday"  "Friday"   
+> speed_char <- c("slow", "fast")
+> speed_factor
+Error: object 'speed_factor' not found
+> speed_factor <- factor(speed_char, ordered = TRUE, levels = c("slow", "fast"))
+> speed_factor
+[1] slow fast
+Levels: slow < fast
+>
